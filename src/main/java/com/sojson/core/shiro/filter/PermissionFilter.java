@@ -14,6 +14,8 @@ import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
 
 import com.sojson.common.utils.LoggerUtils;
+import org.springframework.stereotype.Component;
+
 /**
  * 
  * 开发公司：SOJSON在线工具 <p>

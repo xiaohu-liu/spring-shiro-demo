@@ -69,22 +69,22 @@
 							</shiro:hasPermission>
 						</ul>
 					</li>	
-				</shiro:hasAnyRoles>    
-				<li>
-					<a class="dropdown-toggle" target="_blank" href="http://www.sojson.com/tag_shiro.html" target="_blank">
-						Shiro相关博客<span class="collapsing"></span>
-					</a>
-				</li>	          
-				<li>
-					<a class="dropdown-toggle" href="http://www.sojson.com/shiro" target="_blank">
-						本项目介绍<span class="collapsing"></span>
-					</a>
-				</li>	          
-				<li>
-					<a class="dropdown-toggle" href="http://www.sojson.com/jc/shiro.html" target="_blank">
-						Shiro Demo 其他版本<span class="collapsing"></span>
-					</a>
-				</li>	          
+				</shiro:hasAnyRoles>
+				  <%--<li>
+                      <a class="dropdown-toggle" target="_blank" href="http://www.sojson.com/tag_shiro.html" target="_blank">
+                          Shiro相关博客<span class="collapsing"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-toggle" href="http://www.sojson.com/shiro" target="_blank">
+                          本项目介绍<span class="collapsing"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-toggle" href="http://www.sojson.com/jc/shiro.html" target="_blank">
+                          Shiro Demo 其他版本<span class="collapsing"></span>
+                      </a>
+                  </li>	          --%>
 	          </ul>
 	           <ul class="nav navbar-nav  pull-right" >
 				<li class="dropdown " style="color:#fff;">

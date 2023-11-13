@@ -22,6 +22,7 @@ import com.sojson.permission.bo.URoleBo;
 import com.sojson.permission.bo.UserRoleAllocationBo;
 import com.sojson.user.service.UUserService;
 
+
 @Service
 public class UUserServiceImpl extends BaseMybatisDao<UUserMapper> implements UUserService {
 	/***

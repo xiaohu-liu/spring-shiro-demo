@@ -3,6 +3,8 @@ package com.sojson.core.tags;
 import java.util.Map;
 
 import com.sojson.common.utils.StringUtils;
+import org.springframework.stereotype.Component;
+
 /**
  * 
  * 开发公司：SOJSON在线工具 <p>
@@ -23,6 +25,7 @@ import com.sojson.common.utils.StringUtils;
  * 
  */
 @SuppressWarnings("unchecked")
+//@Component
 public abstract class SuperCustomTag {
 	
 	/**

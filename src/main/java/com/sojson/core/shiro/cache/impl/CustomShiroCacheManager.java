@@ -6,6 +6,8 @@ import org.apache.shiro.cache.CacheManager;
 import org.apache.shiro.util.Destroyable;
 
 import com.sojson.core.shiro.cache.ShiroCacheManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * 
@@ -27,8 +29,10 @@ import com.sojson.core.shiro.cache.ShiroCacheManager;
  * @version 1.0,2016年4月29日 <br/>
  * 
  */
+@Component
 public class CustomShiroCacheManager implements CacheManager, Destroyable {
 
+    @Autowired
     private ShiroCacheManager shiroCacheManager;
 
     @Override

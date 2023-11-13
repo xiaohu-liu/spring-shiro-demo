@@ -5,6 +5,8 @@ import org.apache.shiro.cache.Cache;
 import com.sojson.core.shiro.cache.JedisManager;
 import com.sojson.core.shiro.cache.JedisShiroCache;
 import com.sojson.core.shiro.cache.ShiroCacheManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * 
@@ -25,8 +27,10 @@ import com.sojson.core.shiro.cache.ShiroCacheManager;
  * @version 1.0,2016年6月2日 <br/>
  * 
  */
+@Component
 public class JedisShiroCacheManager implements ShiroCacheManager {
 
+    @Autowired
     private JedisManager jedisManager;
 
     @Override

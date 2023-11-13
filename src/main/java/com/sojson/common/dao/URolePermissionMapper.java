@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 import com.sojson.common.model.URolePermission;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface URolePermissionMapper {
     int insert(URolePermission record);
 

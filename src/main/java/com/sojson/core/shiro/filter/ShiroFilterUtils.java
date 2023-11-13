@@ -52,7 +52,6 @@ public class ShiroFilterUtils {
 	
 	/**
 	 * response 输出JSON
-	 * @param hresponse
 	 * @param resultMap
 	 * @throws IOException
 	 */

@@ -22,6 +22,8 @@ import com.sojson.common.utils.LoggerUtils;
 import com.sojson.core.shiro.cache.VCache;
 import com.sojson.core.shiro.session.ShiroSessionRepository;
 import com.sojson.core.shiro.token.manager.TokenManager;
+import org.springframework.stereotype.Component;
+
 /**
  * 
  * 开发公司：SOJSON在线工具 <p>

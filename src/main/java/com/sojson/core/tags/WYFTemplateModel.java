@@ -12,6 +12,7 @@ import freemarker.template.TemplateDirectiveModel;
 import freemarker.template.TemplateException;
 import freemarker.template.TemplateModel;
 import freemarker.template.TemplateModelException;
+import org.springframework.stereotype.Component;
 
 
 /**
@@ -33,6 +34,7 @@ import freemarker.template.TemplateModelException;
  * 
  */
 @SuppressWarnings("unchecked")
+//@Component
 public abstract class WYFTemplateModel implements TemplateDirectiveModel{
 
 	

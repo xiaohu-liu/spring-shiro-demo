@@ -5,7 +5,9 @@ import java.util.Map;
 import java.util.Set;
 
 import com.sojson.common.model.URole;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface URoleMapper {
     int deleteByPrimaryKey(Long id);
 

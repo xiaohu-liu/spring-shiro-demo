@@ -8,6 +8,8 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.StringUtils;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
+import org.springframework.stereotype.Component;
+
 /**
  * 
  * 开发公司：SOJSON在线工具 <p>

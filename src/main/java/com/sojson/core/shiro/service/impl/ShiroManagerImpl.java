@@ -11,11 +11,14 @@ import org.apache.shiro.web.filter.mgt.DefaultFilterChainManager;
 import org.apache.shiro.web.filter.mgt.PathMatchingFilterChainResolver;
 import org.apache.shiro.web.servlet.AbstractShiroFilter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
 
 import com.sojson.common.utils.LoggerUtils;
 import com.sojson.core.config.INI4j;
 import com.sojson.core.shiro.service.ShiroManager;
+import org.springframework.stereotype.Component;
+
 /**
  * 
  * 开发公司：SOJSON在线工具 <p>
@@ -35,6 +38,7 @@ import com.sojson.core.shiro.service.ShiroManager;
  * @version 1.0,2016年6月2日 <br/>
  * 
  */
+@Component
 public class ShiroManagerImpl implements ShiroManager {
 	
 	// 注意/r/n前不能有空格

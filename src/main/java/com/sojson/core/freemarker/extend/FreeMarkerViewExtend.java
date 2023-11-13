@@ -21,7 +21,7 @@ public class FreeMarkerViewExtend extends FreeMarkerView {
 			LoggerUtils.fmtError(FreeMarkerViewExtend.class,e, "FreeMarkerViewExtend 加载父类出现异常。请检查。");
 		}
 		model.put(Constant.CONTEXT_PATH, request.getContextPath());
-		model.putAll(Ferrmarker.initMap);
+		model.putAll(Freemarker.initMap);
 		UUser token = TokenManager.getToken();
 		//String ip = IPUtils.getIP(request);
 		if(TokenManager.isLogin()){

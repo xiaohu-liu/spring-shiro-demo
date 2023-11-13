@@ -19,6 +19,7 @@ import org.apache.shiro.web.util.WebUtils;
 import com.sojson.common.utils.LoggerUtils;
 import com.sojson.core.shiro.session.CustomSessionManager;
 import com.sojson.core.shiro.session.SessionStatus;
+import org.springframework.stereotype.Component;
 
 /**
  * 

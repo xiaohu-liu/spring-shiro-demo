@@ -9,6 +9,10 @@ import org.apache.shiro.session.mgt.eis.AbstractSessionDAO;
 
 import com.sojson.common.utils.LoggerUtils;
 import com.sojson.core.shiro.session.ShiroSessionRepository;
+import org.apache.shiro.session.mgt.eis.SessionIdGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * 
  * 开发公司：SOJSON在线工具 <p>
@@ -28,20 +32,28 @@ import com.sojson.core.shiro.session.ShiroSessionRepository;
  * @version 1.0,2016年6月2日 <br/>
  * 
  */
+@Component
 public class CustomShiroSessionDAO extends AbstractSessionDAO{ 
-	
+
+    @Autowired
     private ShiroSessionRepository shiroSessionRepository;  
-  
+
     public ShiroSessionRepository getShiroSessionRepository() {  
         return shiroSessionRepository;  
     }  
   
-    public void setShiroSessionRepository(  
-            ShiroSessionRepository shiroSessionRepository) {  
-        this.shiroSessionRepository = shiroSessionRepository;  
-    }  
-  
-    @Override  
+    public void setShiroSessionRepository(
+            ShiroSessionRepository shiroSessionRepository) {
+        this.shiroSessionRepository = shiroSessionRepository;
+    }
+
+    @Override
+    @Autowired
+    public void setSessionIdGenerator(SessionIdGenerator sessionIdGenerator) {
+        super.setSessionIdGenerator(sessionIdGenerator);
+    }
+
+    @Override
     public void update(Session session) throws UnknownSessionException {  
         getShiroSessionRepository().saveSession(session);  
     }  

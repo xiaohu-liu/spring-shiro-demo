@@ -5,7 +5,9 @@ import java.util.Set;
 
 import com.sojson.common.model.UPermission;
 import com.sojson.permission.bo.UPermissionBo;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface UPermissionMapper {
     int deleteByPrimaryKey(Long id);
 

@@ -11,6 +11,7 @@ import com.sojson.core.statics.Constant;
 
 import freemarker.template.TemplateModel;
 import freemarker.template.TemplateModelException;
+import org.springframework.stereotype.Component;
 
 /**
  * 
@@ -31,7 +32,7 @@ import freemarker.template.TemplateModelException;
  * @version 1.0,2016年6月2日 <br/>
  * 
  */
-
+@Component(value = "api")
 public class APITemplateModel extends WYFTemplateModel {
 
 	@Override

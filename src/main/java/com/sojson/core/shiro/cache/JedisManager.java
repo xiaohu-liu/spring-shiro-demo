@@ -6,6 +6,8 @@ import java.util.Set;
 
 import org.apache.shiro.session.Session;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.exceptions.JedisConnectionException;
@@ -33,8 +35,10 @@ import com.sojson.common.utils.StringUtils;
  * @version 1.0,2016年6月2日 <br/>
  * 
  */
+@Component
 public class JedisManager {
 
+    @Autowired
     private JedisPool jedisPool;
 
     public Jedis getJedis() {

@@ -3,12 +3,15 @@ package com.sojson.user.service;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Service;
 import org.springframework.ui.ModelMap;
 
 import com.sojson.common.model.UUser;
 import com.sojson.core.mybatis.page.Pagination;
 import com.sojson.permission.bo.URoleBo;
 import com.sojson.permission.bo.UserRoleAllocationBo;
+
 
 public interface UUserService {
 

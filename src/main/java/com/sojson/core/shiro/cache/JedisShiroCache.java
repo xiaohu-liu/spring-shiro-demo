@@ -8,6 +8,7 @@ import org.apache.shiro.cache.CacheException;
 
 import com.sojson.common.utils.LoggerUtils;
 import com.sojson.common.utils.SerializeUtil;
+import org.springframework.stereotype.Component;
 
 /**
  * 
@@ -47,6 +48,8 @@ public class JedisShiroCache<K, V> implements Cache<K, V> {
 
     
 	static final Class<JedisShiroCache> SELF = JedisShiroCache.class;
+
+
     public JedisShiroCache(String name, JedisManager jedisManager) {
         this.name = name;
         this.jedisManager = jedisManager;

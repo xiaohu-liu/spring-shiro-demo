@@ -1,16 +1,15 @@
 package com.sojson.core.shiro.filter;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-
-import org.apache.shiro.web.filter.AccessControlFilter;
-
 import com.sojson.common.model.UUser;
 import com.sojson.common.utils.LoggerUtils;
 import com.sojson.core.shiro.token.manager.TokenManager;
+import org.apache.shiro.web.filter.AccessControlFilter;
+
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 
  * 开发公司：SOJSON在线工具 <p>
@@ -37,9 +36,12 @@ public class LoginFilter  extends AccessControlFilter {
 			ServletResponse response, Object mappedValue) throws Exception {
 		
 		UUser token = TokenManager.getToken();
-		
+
+
+		boolean allow  = Boolean.TRUE;
+
 		if(null != token || isLoginRequest(request, response)){// && isEnabled()
-            return Boolean.TRUE;
+            return allow;
         } 
 		if (ShiroFilterUtils.isAjax(request)) {// ajax请求
 			Map<String,String> resultMap = new HashMap<String, String>();

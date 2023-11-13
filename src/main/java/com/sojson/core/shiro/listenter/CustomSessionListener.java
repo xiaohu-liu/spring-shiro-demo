@@ -5,6 +5,9 @@ import org.apache.shiro.session.Session;
 import org.apache.shiro.session.SessionListener;
 
 import com.sojson.core.shiro.session.ShiroSessionRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * 
  * 开发公司：SOJSON在线工具 <p>
@@ -24,8 +27,10 @@ import com.sojson.core.shiro.session.ShiroSessionRepository;
  * @version 1.0,2016年6月2日 <br/>
  * 
  */
+@Component
 public class CustomSessionListener implements SessionListener {
 
+    @Autowired
     private ShiroSessionRepository shiroSessionRepository;
 
     /**

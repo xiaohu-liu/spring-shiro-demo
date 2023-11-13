@@ -5,7 +5,8 @@ import java.util.Map;
 
 import com.sojson.common.model.UUser;
 import com.sojson.permission.bo.URoleBo;
-
+import org.apache.ibatis.annotations.Mapper;
+@Mapper
 public interface UUserMapper {
     int deleteByPrimaryKey(Long id);
 
